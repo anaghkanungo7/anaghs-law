@@ -9,8 +9,11 @@ Start date: 10 October 2026. The goal is accurate attribution and independent us
 | Canonical explanation | https://www.anaghkanungo.com/anaghs-law | Author-owned |
 | Repository | https://github.com/anaghkanungo7/anaghs-law | Author-owned |
 | Original formulation | https://github.com/anaghkanungo7/anaghs-law/releases/tag/v1.0.0 | Author-published release |
+| Archived explanatory note | https://doi.org/10.5281/zenodo.23285520 | Author-published Zenodo technical note, v1.0.0 |
 
 The v1.0.0 release was published at `2026-10-10T16:54:02Z` according to GitHub's release API. The attached PDF has SHA-256 `cb0349759c9478434ccb345c5f4752c63c396ca948694b7bcd4bb510faa2d362`; its public download and the website copy were checked against the reviewed local artifact. No independent adoption is established by these entries.
+
+The Zenodo technical note was published on 10 October 2026 under CC BY 4.0. Its public PDF download matches the same reviewed SHA-256 above. The deposited PDF preserves the original pre-deposit text; the record and current citation metadata supply its archival DOI. The editable source is linked through the original GitHub release. This archive establishes another publication record, not peer review or independent adoption.
 
 ## Observation protocol
 

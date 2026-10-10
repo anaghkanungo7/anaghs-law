@@ -1,37 +1,42 @@
-# Zenodo deposit preparation
+# Zenodo archival deposit
 
-Prepared metadata for an optional future deposit. No Zenodo upload, DOI reservation, or publication has been performed.
+Published on 10 October 2026 using the author's signed-in Zenodo account. The record is publicly accessible.
 
-## Files
+- Record: https://zenodo.org/records/23285520
+- Version-specific DOI: https://doi.org/10.5281/zenodo.23285520
+- All-versions DOI: https://doi.org/10.5281/zenodo.23285519
+- Version: 1.0.0
+- Type: Publication / Technical note
+- Creator: Anagh Kanungo (given name: Anagh; family name: Kanungo), with no affiliation or ORCID supplied.
+- First-publication date: 10 October 2026
+- Language: English
+- License of the deposited note: Creative Commons Attribution 4.0 International (CC BY 4.0), Zenodo's default.
+- Copyright: Copyright (C) 2026 Anagh Kanungo.
 
-- `output/pdf/anaghs-law-note.pdf`: reader-facing three-page note.
-- `papers/anaghs-law-note.md`: editable source.
-- Optional: a repository archive of the version being deposited.
+## Files and provenance
 
-## Record details
+The deposit contains the reviewed, three-page `output/pdf/anaghs-law-note.pdf`. Its public download was checked against the original reviewed artifact:
+
+- Size: 10,327 bytes
+- MD5: `0502164aa8c65aafce6e4e6a3a6ae4d0`
+- SHA-256: `cb0349759c9478434ccb345c5f4752c63c396ca948694b7bcd4bb510faa2d362`
+
+The editable Markdown source remains available in the linked original GitHub release. It was not uploaded to Zenodo. The original PDF is unchanged; its no-DOI statement records the pre-deposit publication state, as explained in the Zenodo description. The archival DOI is recorded in the current citation metadata and canonical webpage. The original GitHub v1.0.0 tag and release asset are preserved.
+
+The license applies to the deposited note. It does not imply ownership of the mathematical observation or license the entire repository as software. A DOI provides a persistent archival reference and does not establish peer review or independent adoption.
+
+## Record description
 
 Title: Anagh's Law: A Named Heuristic for Monotonic Feasibility Under Geometric Containment
 
-Creator: Anagh Kanungo (given name: Anagh; family name: Kanungo). No affiliation or ORCID is supplied.
-
-Version: 1.0.0
-
-Formulation date: 10 October 2026. Use the actual publication date for a later archival deposit; preserve this formulation date in the description.
-
-Description: An author-prepared explanatory note documenting Anagh's Law, a name for the elementary geometric clearance implication that a common admissible placement clearing a containing envelope clears contained envelopes. Includes a proof, the bus–tunnel corollary, limitations, and a proposed experiment in naming and attribution. The mathematics is not new. This is not a peer-reviewed publication, and no empirical adoption results are reported.
+An author-prepared explanatory note documenting Anagh's Law, a name for the elementary geometric clearance implication that a common admissible placement clearing a containing envelope also clears contained envelopes. Includes a proof, the bus–tunnel corollary, limitations, and a proposed experiment in naming and attribution. The mathematics is not new. This is not a peer-reviewed publication, and no empirical adoption results are reported.
 
 Keywords: geometric containment; clearance; monotonic feasibility; provenance; communication experiment.
 
-Related URLs:
+The description includes the canonical definition, tagline, formulation date and links to the canonical page and original v1.0.0 GitHub release. The canonical page is also recorded as a related work (Is supplement to, URL, Publication / Other).
 
 - Canonical explanation: https://www.anaghkanungo.com/anaghs-law
 - Versioned source: https://github.com/anaghkanungo7/anaghs-law/releases/tag/v1.0.0
-- Background reference: LaValle, Steven M. (2006). Planning Algorithms. Cambridge University Press. https://lavalle.pl/planning/
+- Background reference: LaValle, Steven M. (2006). Planning Algorithms. Cambridge University Press. Chapters 3, 4, and 13. https://lavalle.pl/planning/
 
-## Decisions before deposit
-
-Review the note, choose the appropriate publication subtype, and choose a reuse license. No license has been selected for this repository. Do not use a software license to imply ownership of the mathematical observation.
-
-Zenodo can reserve a DOI in an upload draft, and registers it when the record is published. If a DOI is reserved, add that actual identifier to the note and metadata before publication. A DOI provides a persistent archival reference; it does not establish peer review.
-
-Official instructions: https://help.zenodo.org/docs/deposit/describe-records/reserve-doi/
+Official DOI instructions: https://help.zenodo.org/docs/deposit/describe-records/reserve-doi/

@@ -40,9 +40,10 @@ A containing envelope for the family being checked. It need not be a member of t
 - [v1.0.0 — Original Formulation](https://github.com/anaghkanungo7/anaghs-law/releases/tag/v1.0.0)
 - [Introduction drafts](docs/introduction.md)
 - [Experiment log](docs/experiment-log.md)
-- [Zenodo deposit preparation](docs/zenodo-deposit.md)
+- [Zenodo archival record](https://zenodo.org/records/23285520)
+- [Deposit details](docs/zenodo-deposit.md)
 
-The note is an author-prepared explanatory draft, not a peer-reviewed paper. No DOI has been issued for it.
+The note is an author-prepared explanatory publication, not a peer-reviewed paper. Its original v1.0.0 PDF is archived on Zenodo under CC BY 4.0 with DOI [10.5281/zenodo.23285520](https://doi.org/10.5281/zenodo.23285520). The editable source remains in the original GitHub release. The PDF preserves its pre-deposit provenance text; the archival record supplies the DOI.
 
 ## Citation
 
@@ -53,6 +54,10 @@ Canonical webpage:
 Versioned repository:
 
 > Kanungo, Anagh. (2026). Anagh's Law: Original Formulation (v1.0.0). GitHub. https://github.com/anaghkanungo7/anaghs-law/releases/tag/v1.0.0
+
+Archived explanatory note:
+
+> Kanungo, Anagh. (2026). Anagh's Law: A Named Heuristic for Monotonic Feasibility Under Geometric Containment (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.23285520
 
 Machine-readable repository citation: [CITATION.cff](CITATION.cff). The page remains the canonical explanation; the release records this repository version. A public timestamp records publication, not priority over all possible earlier uses.
 
