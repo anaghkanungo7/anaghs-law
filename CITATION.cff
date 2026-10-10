@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "Please cite the canonical webpage for the explanation, or this release for the versioned repository."
+type: dataset
+title: "Anagh's Law: Original Formulation"
+authors:
+  - family-names: Kanungo
+    given-names: Anagh
+    website: "https://www.anaghkanungo.com/"
+version: 1.0.0
+date-released: 2026-10-10
+url: "https://www.anaghkanungo.com/anaghs-law"
+repository-code: "https://github.com/anaghkanungo7/anaghs-law"
+preferred-citation:
+  type: generic
+  title: "Anagh's Law: Original Formulation"
+  authors:
+    - family-names: Kanungo
+      given-names: Anagh
+  year: 2026
+  version: 1.0.0
+  url: "https://github.com/anaghkanungo7/anaghs-law/releases/tag/v1.0.0"
+abstract: "A named geometric clearance heuristic and public record of its formulation. The underlying mathematics is elementary and is not new. Includes an author-prepared explanatory note, not a peer-reviewed publication."
+keywords:
+  - geometric containment
+  - clearance
+  - monotonic feasibility
+  - provenance
+  - communication experiment
