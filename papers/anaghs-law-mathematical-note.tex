@@ -1,0 +1,114 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=25mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{microtype}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue]{hyperref}
+\hypersetup{pdftitle={Anagh's Law: Monotonicity of Geometric Clearance},pdfauthor={Anagh Kanungo}}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\interior}{\operatorname{int}}
+\newcommand{\SO}{\operatorname{SO}}
+\newcommand{\dist}{\operatorname{dist}}
+\newcommand{\Pow}{\mathcal{P}}
+\title{Anagh's Law\\\large Monotonicity of Geometric Clearance}
+\author{Anagh Kanungo}
+\date{11 October 2026 \quad Version 1.1.0}
+\begin{document}
+\maketitle
+\begin{abstract}
+This note states an elementary containment implication for geometric clearance in Euclidean space. It specifies envelopes, rigid placements, boundary contact, and common admissibility; derives the implication from monotonicity of direct images; and records its extensions to a shared motion and a common safety margin. An example shows why volume cannot replace containment. The statement is a direct consequence of set inclusion, not a new mathematical theorem.
+\end{abstract}
+
+\section{Geometric setup}
+The ambient space is $\R^3$ with its Euclidean norm and topology. All object models are expressed in a common body coordinate system; any alignment needed to compare them is fixed before applying a placement. Let $S\subseteq\R^3$ be the available region. Its interior $\interior S$ consists of points with an open neighborhood contained in $S$.
+
+\begin{definition}[Envelope and placement]\label{def:setup}
+For a nonempty compact occupied set $K\subseteq\R^3$, an \emph{envelope} is a compact set $E\subseteq\R^3$ with $K\subseteq E$. It need not be a bounding box or be convex. A rigid placement is the map
+\[
+T_{R,t}(x)=Rx+t,\qquad R\in\SO(3),\quad t\in\R^3,
+\]
+where $\SO(3)=\{R\in\R^{3\times3}:R^{\mathsf T}R=I,\ \det R=1\}$. For a set $E$, write $T(E)=\{T(x):x\in E\}$. The envelope \emph{strictly clears} $S$ at $T$ if $T(E)\subseteq\interior S$. By contrast, $T(E)\subseteq S$ permits boundary contact when the boundary belongs to $S$.
+\end{definition}
+
+The occupied set itself, its axis-aligned bounding box in the chosen body frame, or its convex hull can serve as an envelope. A common tolerance $\varepsilon\geq0$ can instead be modeled by $E_\varepsilon=E\oplus\overline B_\varepsilon(0)$, where $\overline B_\varepsilon(0)=\{u:\|u\|\leq\varepsilon\}$ and $E\oplus F=\{e+f:e\in E,f\in F\}$ is a Minkowski sum. A body-frame box can become an oriented box after rotation.
+
+Let $\mathcal A_E\subseteq\SO(3)\times\R^3$ denote the allowed placements of $E$. Membership in $\mathcal A_E$ is an extra modeling hypothesis: supports, orientation restrictions, or other physical constraints do not follow from set inclusion.
+
+\section{Monotonicity and clearance}
+A map between partially ordered sets is \emph{order preserving} if $u\leq v$ implies $F(u)\leq F(v)$. Here the ordered sets are power sets with the inclusion order.
+\begin{lemma}[Monotonicity of direct images]\label{lem:image}
+For any function $f:X\to Y$, the map $f_*:\Pow(X)\to\Pow(Y)$, $f_*(E)=\{f(x):x\in E\}$, is order preserving.
+\end{lemma}
+\begin{proof}
+If $B\subseteq A$ and $y\in f_*(B)$, then $y=f(x)$ for some $x\in B\subseteq A$, hence $y\in f_*(A)$.
+\end{proof}
+
+\begin{theorem}[Containment transfers strict clearance]\label{thm:clearance}
+Let $A,B\subseteq\R^3$ be nonempty compact envelopes with $B\subseteq A$. Let $(R,t)\in\mathcal A_A\cap\mathcal A_B$, and set $T=T_{R,t}$. If $T(A)\subseteq\interior S$, then $T(B)\subseteq\interior S$.
+\end{theorem}
+\begin{proof}
+By Lemma~\ref{lem:image}, $T(B)\subseteq T(A)\subseteq\interior S$.
+\end{proof}
+
+\begin{remark}[Role of the hypotheses]
+Neither compactness nor rigidity is required for this inclusion implication: Lemma~\ref{lem:image} applies to any function. They specify the intended geometric model. Compactness does have a clearance consequence: if $\R^3\setminus\interior S$ is nonempty, then $T(A)\subseteq\interior S$ implies
+$\dist(T(A),\R^3\setminus\interior S)>0$, because a compact set disjoint from a closed set has positive distance. This gives some positive margin, not an arbitrarily prescribed one.
+\end{remark}
+
+With a common allowed set $\mathcal Q$, define
+$\mathcal F(E)=\{(R,t)\in\mathcal Q:T_{R,t}(E)\subseteq\interior S\}$.
+Theorem~\ref{thm:clearance} gives $\mathcal F(A)\subseteq\mathcal F(B)$ when $B\subseteq A$. Thus feasible placements expand as the envelope shrinks. For differing allowed sets, a sufficient hypothesis for the corresponding inclusion is $\mathcal A_A\subseteq\mathcal A_B$; a single witness only needs to be allowed for both.
+
+\section{Motion and a common margin}
+\begin{corollary}[Shared motion; bus--tunnel interpretation]\label{cor:motion}
+Let $B\subseteq A$ be as in Theorem~\ref{thm:clearance}. Let $q:[0,1]\to\SO(3)\times\R^3$ be a continuous path, $q(s)=(R_s,t_s)$, admissible as an entire motion for both objects. If $T_{R_s,t_s}(A)\subseteq\interior S$ for every $s\in[0,1]$, then the same holds for $B$.
+\end{corollary}
+\begin{proof}
+Apply Theorem~\ref{thm:clearance} at each $s$.
+\end{proof}
+The bus--tunnel wording is the case where $A$ encloses the bus and $B$ encloses another vehicle in the same aligned frame. Both vehicles must admit the same motion. Entrance clearance or finitely many sampled poses does not establish the hypothesis for all $s$.
+
+\begin{corollary}[Common safety margin]\label{cor:margin}
+For $\varepsilon\geq0$, if $B\subseteq A$ and $T(A\oplus\overline B_\varepsilon(0))\subseteq\interior S$, then $T(B\oplus\overline B_\varepsilon(0))\subseteq\interior S$.
+\end{corollary}
+\begin{proof}
+Every $b+u$ with $b\in B$ and $\|u\|\leq\varepsilon$ also lies in $A\oplus\overline B_\varepsilon(0)$. Apply Lemma~\ref{lem:image}.
+\end{proof}
+For a rigid placement, $T(E\oplus\overline B_\varepsilon(0))=T(E)\oplus\overline B_\varepsilon(0)$ because rotations preserve the Euclidean ball. This corollary uses a common margin. Unequal required margins need a containment check on the padded envelopes.
+
+\section{The containment order}
+\begin{proposition}\label{prop:order}
+Inclusion on the nonempty compact subsets of $\R^3$ is a partial order, but not a total order.
+\end{proposition}
+\begin{proof}
+Inclusion is reflexive and transitive, and $A\subseteq B$ together with $B\subseteq A$ implies $A=B$. For non-totality, take
+\[
+A=[0,1]\times[0,3]\times[0,1],\qquad
+B=[0,\tfrac12]\times[0,4]\times[0,1].
+\]
+The point $(1,0,0)$ belongs to $A\setminus B$, while $(0,4,0)$ belongs to $B\setminus A$. Hence neither set contains the other.
+\end{proof}
+Here $\operatorname{vol}(B)=2<3=\operatorname{vol}(A)$, yet $B\nsubseteq A$. For example, $A\subseteq\interior([-1,2]\times[-1,\tfrac72]\times[-1,2])$, whereas $B$ is not contained in that interior at the identity placement. Lower volume therefore does not transfer clearance. A common containing envelope may exist without a largest member of the family.
+
+\begin{remark}[Conservative bounds and physical scope]
+If an enclosing box clears, so does the geometry it encloses. Failure of the box does not imply failure of that geometry. Set containment alone also says nothing about steering limits, turning radius, ground support, load capacity, strength, friction, or deformation. Those belong to the admissibility model or to additional constraints.
+\end{remark}
+
+\section{Context and references}
+This implication belongs to the elementary monotonicity of direct images under inclusion. It is also consistent with the conservative-envelope reasoning used in collision checking. LaValle treats rigid-body transformations and configuration-space obstacles in Chapters 3 and 4 of \emph{Planning Algorithms}~\cite{lavalle}. Van den Bergen uses hierarchies of axis-aligned bounding boxes (AABB trees) for collision detection of deformable models~\cite{bergen}. Gilbert, Johnson, and Keerthi give an algorithm for distances between convex sets~\cite{gjk}. These references concern geometric modeling and computational methods; the implication above neither derives those algorithms nor supplies a new collision-detection algorithm.
+
+\begin{thebibliography}{9}
+\bibitem{lavalle} Steven M. LaValle. \emph{Planning Algorithms}. Cambridge University Press, 2006. Chapters 3--4. \url{https://lavalle.pl/planning/}.
+\bibitem{bergen} Gino van den Bergen. Efficient collision detection of complex deformable models using AABB trees. \emph{Journal of Graphics Tools}, 2(4), 1997. \url{https://doi.org/10.1080/10867651.1997.10487480}.
+\bibitem{gjk} Elmer G. Gilbert, Daniel W. Johnson, and S. Sathiya Keerthi. A fast procedure for computing the distance between complex objects in three-dimensional space. \emph{IEEE Journal of Robotics and Automation}, 4(2):193--203, 1988. \url{https://doi.org/10.1109/56.2083}.
+\end{thebibliography}
+\end{document}

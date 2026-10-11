@@ -1,77 +1,46 @@
-# Anagh's Law
+# Anagh's Law: Monotonicity of Geometric Clearance
 
-**Clear the maximum, clear the rest.**
-
-A named geometric clearance heuristic, coined by **Anagh Kanungo on 10 October 2026**, inspired by a bus-and-tunnel observation.
+A short mathematical note by **Anagh Kanungo**, revised **11 October 2026**, version **1.1.0**.
 
 **Canonical page:** https://www.anaghkanungo.com/anaghs-law
 
-## Definition
+The note defines compact envelopes in Euclidean three-space, rigid placements, strict clearance, and shared admissibility. Its clearance theorem follows immediately from monotonicity of direct images under set inclusion. It also records corollaries for a shared continuous motion and a common safety margin, and a proposition showing that containment is a partial order rather than a total order.
 
-> If one object’s spatial envelope contains another’s, any placement that clears the containing envelope also clears the contained envelope, provided that placement is admissible for both.
+The mathematics is elementary and is not new. The references place the geometric model alongside configuration-space geometry, AABB hierarchies, and convex-set distance computation. They do not establish a new theorem or collision-detection algorithm.
 
-Let **B ⊆ A** be envelopes aligned in a common coordinate system, **S** the available space, and **T** a placement allowed for both objects. If **T(A) ⊆ S**, then **T(B) ⊆ T(A) ⊆ S**.
+## Mathematical note
 
-The underlying mathematics is elementary and is not new. This project documents the name, formulation, and a communication experiment. It does not claim a new theorem, peer review, institutional endorsement, or ownership of geometric containment.
+- [LaTeX source](papers/anaghs-law-mathematical-note.tex)
+- [Typeset PDF](output/pdf/anaghs-law-mathematical-note.pdf)
 
-## The bus–tunnel corollary
-
-If a bus can clear a tunnel, any vehicle geometrically contained within the bus's relevant clearance envelope can also clear it under the same admissible conditions.
-
-The same argument holds along an entire motion only when containment holds at every point and that motion is admissible for both vehicles.
-
-## What “maximum” means
-
-A containing envelope for the family being checked. It need not be a member of that family. Neither volume nor mass defines this order. A tall, narrow object and a short, wide object can be incomparable; use a common bound or separate checks.
-
-## Limitations
-
-- Less volume, mass, width, or height alone does not establish containment.
-- Fitting at an entrance does not establish clearance along the whole path.
-- Steering, turning radius, suspension, support, and other constraints may prevent the same motion.
-- Load capacity, deformation, tolerances, and required safety margins need separate treatment.
-- If a conservative enclosing box clears, the object clears. If the box fails, the object might still fit.
-- The implication only transfers success to contained envelopes. A bus failing does not imply that a car fails.
-
-## Note and stable version
-
-- [Three-page note: editable Markdown](papers/anaghs-law-note.md)
-- [Three-page note: PDF](output/pdf/anaghs-law-note.pdf)
-- [v1.0.0 — Original Formulation](https://github.com/anaghkanungo7/anaghs-law/releases/tag/v1.0.0)
-- [Introduction drafts](docs/introduction.md)
-- [Experiment log](docs/experiment-log.md)
-- [Zenodo archival record](https://zenodo.org/records/23285520)
-- [Deposit details](docs/zenodo-deposit.md)
-
-The note is an author-prepared explanatory publication, not a peer-reviewed paper. Its original v1.0.0 PDF is archived on Zenodo under CC BY 4.0 with DOI [10.5281/zenodo.23285520](https://doi.org/10.5281/zenodo.23285520). The editable source remains in the original GitHub release. The PDF preserves its pre-deposit provenance text; the archival record supplies the DOI.
+The PDF uses numbered theorem environments and cross-references. The canonical page renders its mathematics from TeX on the server while retaining the site's plain HTML presentation.
 
 ## Citation
 
-Canonical webpage:
+> Kanungo, Anagh. (2026, October 11). Anagh's Law: Monotonicity of Geometric Clearance (Version 1.1.0). https://www.anaghkanungo.com/anaghs-law
 
-> Kanungo, Anagh. (2026, October 10). Anagh’s Law: Clear the maximum, clear the rest. Original formulation, version 1.0. https://www.anaghkanungo.com/anaghs-law
+Machine-readable citation: [CITATION.cff](CITATION.cff). This revision is author prepared and has not been peer reviewed. It has not been deposited as a new Zenodo version.
 
-Versioned repository:
+## Build the mathematical note
 
-> Kanungo, Anagh. (2026). Anagh's Law: Original Formulation (v1.0.0). GitHub. https://github.com/anaghkanungo7/anaghs-law/releases/tag/v1.0.0
-
-Archived explanatory note:
-
-> Kanungo, Anagh. (2026). Anagh's Law: A Named Heuristic for Monotonic Feasibility Under Geometric Containment (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.23285520
-
-Machine-readable repository citation: [CITATION.cff](CITATION.cff). The page remains the canonical explanation; the release records this repository version. A public timestamp records publication, not priority over all possible earlier uses.
-
-## Rebuild the PDF
-
-Python 3 and ReportLab are required:
+A TeX installation with `pdflatex`, Latin Modern, AMS packages, `microtype`, and `hyperref` is required:
 
 ```sh
-python3 -m pip install -r requirements.txt
-python3 scripts/build_pdf.py
+sh scripts/build_mathematical_note.sh
 ```
 
-The script reads the Markdown source, including its three explicit page divisions, and uses ReportLab's standard serif fonts. It needs no network access or private credentials. The included PDF is the release artifact.
+The script compiles twice to resolve cross-references, disables shell escape, and writes the PDF to `output/pdf/`. Compilation intermediates stay in ignored `tmp/`.
 
-## What counts as adoption
+## Earlier edition and provenance
 
-Author-owned pages and uploads establish a record. Independent citation, accurate explanation, and unprompted use are separate outcomes. Record evidence and uncertainty in the experiment log; do not infer adoption from the number of pages published by the author.
+The original formulation was published on 10 October 2026. These artifacts preserve that edition:
+
+- [Original v1.0.0 GitHub release](https://github.com/anaghkanungo7/anaghs-law/releases/tag/v1.0.0)
+- [Original Markdown source](papers/anaghs-law-note.md)
+- [Original PDF](output/pdf/anaghs-law-note.pdf)
+- [Original Zenodo archive and DOI](https://doi.org/10.5281/zenodo.23285520)
+- [Deposit details](docs/zenodo-deposit.md)
+
+The DOI identifies the original **v1.0.0** explanatory note, archived under CC BY 4.0. It does not identify the revised mathematical note above. The original tag, release assets, source, and PDF are preserved. To rebuild the original PDF, install `requirements.txt` and run `python3 scripts/build_pdf.py`.
+
+The origin and naming experiment are now described in a [separate blog post](https://www.anaghkanungo.com/blog/naming-anaghs-law). The [experiment log](docs/experiment-log.md) remains a separate record of observations and uncertainty.

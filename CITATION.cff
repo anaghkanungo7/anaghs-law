@@ -1,31 +1,29 @@
 cff-version: 1.2.0
-message: "Please cite the canonical webpage for the explanation, the GitHub release for the repository, or the Zenodo DOI for the archived explanatory note."
+message: "Please cite version 1.1.0 for the revised mathematical note. The original Zenodo DOI identifies the earlier v1.0.0 note only."
 type: dataset
-title: "Anagh's Law: Original Formulation"
+title: "Anagh's Law: Monotonicity of Geometric Clearance"
 authors:
   - family-names: Kanungo
     given-names: Anagh
     website: "https://www.anaghkanungo.com/"
-version: 1.0.0
-date-released: "2026-10-10"
+version: 1.1.0
+date-released: "2026-10-11"
 url: "https://www.anaghkanungo.com/anaghs-law"
 repository-code: "https://github.com/anaghkanungo7/anaghs-law"
 preferred-citation:
   type: generic
-  title: "Anagh's Law: A Named Heuristic for Monotonic Feasibility Under Geometric Containment"
+  title: "Anagh's Law: Monotonicity of Geometric Clearance"
   authors:
     - family-names: Kanungo
       given-names: Anagh
   year: 2026
-  version: 1.0.0
-  publisher:
-    name: Zenodo
-  doi: "10.5281/zenodo.23285520"
-  url: "https://zenodo.org/records/23285520"
-abstract: "A named geometric clearance heuristic and public record of its formulation. The underlying mathematics is elementary and is not new. Includes an author-prepared explanatory note, not a peer-reviewed publication."
+  month: 10
+  day: 11
+  version: 1.1.0
+  url: "https://www.anaghkanungo.com/anaghs-law"
+abstract: "An elementary mathematical note on monotonicity of geometric clearance, with explicit envelope and placement definitions, strict clearance, common admissibility, motion and margin corollaries, and a partial-order counterexample. Author prepared; not peer reviewed."
 keywords:
   - geometric containment
   - clearance
-  - monotonic feasibility
-  - provenance
-  - communication experiment
+  - monotonicity
+  - rigid transformations

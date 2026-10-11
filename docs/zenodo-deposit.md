@@ -21,7 +21,7 @@ The deposit contains the reviewed, three-page `output/pdf/anaghs-law-note.pdf`. 
 - MD5: `0502164aa8c65aafce6e4e6a3a6ae4d0`
 - SHA-256: `cb0349759c9478434ccb345c5f4752c63c396ca948694b7bcd4bb510faa2d362`
 
-The editable Markdown source remains available in the linked original GitHub release. It was not uploaded to Zenodo. The original PDF is unchanged; its no-DOI statement records the pre-deposit publication state, as explained in the Zenodo description. The archival DOI is recorded in the current citation metadata and canonical webpage. The original GitHub v1.0.0 tag and release asset are preserved.
+The editable Markdown source remains available in the linked original GitHub release. It was not uploaded to Zenodo. The original PDF is unchanged; its no-DOI statement records the pre-deposit publication state, as explained in the Zenodo description. The archival DOI is recorded on the canonical webpage as the earlier-edition archive. Current citation metadata describes the distinct v1.1.0 mathematical revision, which has not been deposited as a new Zenodo version. The original GitHub v1.0.0 tag and release asset are preserved.
 
 The license applies to the deposited note. It does not imply ownership of the mathematical observation or license the entire repository as software. A DOI provides a persistent archival reference and does not establish peer review or independent adoption.
 
