@@ -21,7 +21,7 @@ The deposit contains the reviewed, three-page `output/pdf/anaghs-law-note.pdf`. 
 - MD5: `0502164aa8c65aafce6e4e6a3a6ae4d0`
 - SHA-256: `cb0349759c9478434ccb345c5f4752c63c396ca948694b7bcd4bb510faa2d362`
 
-The editable Markdown source remains available in the linked original GitHub release. It was not uploaded to Zenodo. The original PDF is unchanged; its no-DOI statement records the pre-deposit publication state, as explained in the Zenodo description. The archival DOI is recorded on the canonical webpage as the earlier-edition archive. Current citation metadata describes the distinct v1.1.0 mathematical revision, which has not been deposited as a new Zenodo version. The original GitHub v1.0.0 tag and release asset are preserved.
+The editable Markdown source remains available in the linked original GitHub release. It was not uploaded to Zenodo. The original PDF is unchanged; its no-DOI statement records the pre-deposit publication state, as explained in the Zenodo description. The archival DOI is recorded on the canonical webpage as the earlier-edition archive. Current citation metadata describes the distinct v1.1.0 mathematical revision, archived as the new version documented below. The original GitHub v1.0.0 tag and release asset are preserved.
 
 The license applies to the deposited note. It does not imply ownership of the mathematical observation or license the entire repository as software. A DOI provides a persistent archival reference and does not establish peer review or independent adoption.
 
@@ -40,3 +40,19 @@ The description includes the canonical definition, tagline, formulation date and
 - Background reference: LaValle, Steven M. (2006). Planning Algorithms. Cambridge University Press. Chapters 3, 4, and 13. https://lavalle.pl/planning/
 
 Official DOI instructions: https://help.zenodo.org/docs/deposit/describe-records/reserve-doi/
+
+## Revised mathematical note: v1.1.0
+
+Published as a new version on 13 October 2026 in the author's signed-in Zenodo account. The first-publication date is 11 October 2026 because the same files were first published on the author's website on that date.
+
+- Record: https://zenodo.org/records/23329767
+- Version-specific DOI: https://doi.org/10.5281/zenodo.23329767
+- All-versions DOI, unchanged: https://doi.org/10.5281/zenodo.23285519
+- Title: Anagh's Law: Monotonicity of Geometric Clearance
+- Resource type: Publication / Technical note
+- Creator: Anagh Kanungo; no affiliation or ORCID supplied
+- License: CC BY 4.0
+- PDF: `output/pdf/anaghs-law-mathematical-note.pdf`, 264015 bytes, MD5 `155876448da610e6279cd5b490bbf5bb`, SHA-256 `89155f40bfa1974c4242b15eebdeeab630e952798536bfedd03cb365ffc9a7ec`
+- LaTeX source: `papers/anaghs-law-mathematical-note.tex`, 9180 bytes, MD5 `1a106a91be04031b4a386d0db2726832`
+
+Both file checksums shown in Zenodo's upload form matched the reviewed local files before publication. The public record shows version 1.1.0 alongside preserved version 1.0.0. Its description explains the formal setup, direct-image lemma, strict-clearance theorem, motion and margin corollaries, and volume counterexample. The three bibliography entries match the note. No peer review, new theorem, new collision algorithm, or adoption is claimed.

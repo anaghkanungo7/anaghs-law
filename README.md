@@ -17,9 +17,9 @@ The PDF uses numbered theorem environments and cross-references. The canonical p
 
 ## Citation
 
-> Kanungo, Anagh. (2026, October 11). Anagh's Law: Monotonicity of Geometric Clearance (Version 1.1.0). https://www.anaghkanungo.com/anaghs-law
+> Kanungo, Anagh. (2026). Anagh's Law: Monotonicity of Geometric Clearance (Version 1.1.0). Zenodo. https://doi.org/10.5281/zenodo.23329767
 
-Machine-readable citation: [CITATION.cff](CITATION.cff). This revision is author prepared and has not been peer reviewed. It has not been deposited as a new Zenodo version.
+Machine-readable citation: [CITATION.cff](CITATION.cff). This revision is author prepared and has not been peer reviewed. The PDF and LaTeX source are archived on Zenodo under DOI [10.5281/zenodo.23329767](https://doi.org/10.5281/zenodo.23329767). The deposit was published on 13 October 2026; its first-publication date is 11 October 2026, matching the website revision.
 
 ## Build the mathematical note
 
@@ -43,4 +43,8 @@ The original formulation was published on 10 October 2026. These artifacts prese
 
 The DOI identifies the original **v1.0.0** explanatory note, archived under CC BY 4.0. It does not identify the revised mathematical note above. The original tag, release assets, source, and PDF are preserved. To rebuild the original PDF, install `requirements.txt` and run `python3 scripts/build_pdf.py`.
 
+The [illustrated explainer](https://www.anaghkanungo.com/blog/containment-and-clearance) gives worked examples, four diagrams, and a planar model with a shared rotation, offset, and margin. It is a companion article, separate from the formal note.
+
 The origin and naming experiment are now described in a [separate blog post](https://www.anaghkanungo.com/blog/naming-anaghs-law). The [experiment log](docs/experiment-log.md) remains a separate record of observations and uncertainty.
+
+The mathematical page, origin post, and illustrated explainer have [verified Wayback snapshots](docs/wayback-snapshots.md) from 13 October 2026.

@@ -44,4 +44,16 @@ Google documents sitemap submission and URL Inspection requests here: https://de
 
 On 11 October 2026, the author prepared version 1.1.0 as a mathematical note with a formal geometric setup, a monotonicity lemma, strict-clearance theorem, motion and margin corollaries, an incomparability proposition, and primary references. Naming and adoption material moved to https://www.anaghkanungo.com/blog/naming-anaghs-law . This is an author-owned revision, not evidence of independent adoption.
 
-The original Zenodo DOI remains specific to v1.0.0. The revised LaTeX source and PDF are distinct artifacts; no new Zenodo version has been published.
+The original Zenodo DOI remains specific to v1.0.0. The revised LaTeX source and PDF are distinct artifacts; the v1.1.0 archive was subsequently published on 13 October 2026, as recorded below.
+
+## Revised archive and illustrated companion
+
+On 13 October 2026, version 1.1.0 was published at https://doi.org/10.5281/zenodo.23329767 as a new version of the existing Zenodo record. It contains the unchanged reviewed mathematical PDF and its LaTeX source. The first-publication date remains 11 October 2026. The all-versions DOI is unchanged. This is another author-owned publication record, not an independent citation or adoption.
+
+A companion illustrated explainer was published at https://www.anaghkanungo.com/blog/containment-and-clearance on 13 October 2026. The figures and analytic planar model explain shared placements, incomparable envelopes, contact, padding, and whole-path hypotheses. It reports no empirical vehicle clearance measurements.
+
+The website's production deployment was confirmed Ready for commit `6405f73cd026d5d2a7f82a9559e1120d8c4e5a7d`. All four vector figures were visually checked, the interactive model passed contact/failure/incomparability/rotation checks, and 1860 results matched an independent transformed-corner calculation. Mobile widths of 390 and 320 pixels had no horizontal page overflow. These checks establish the behavior of an illustrative rectangle model, not empirical vehicle clearance.
+
+## Web archive captures
+
+Internet Archive Save Page Now completed captures of the mathematical page, origin post, and illustrated explainer on 13 October 2026. The capture URLs, exact UTC times, and replay checks are recorded in [wayback-snapshots.md](wayback-snapshots.md). Saving error pages was disabled. These are independent hosting and capture of author-owned material, not independent citations or adoption.

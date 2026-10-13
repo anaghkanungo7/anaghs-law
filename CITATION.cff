@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "Please cite version 1.1.0 for the revised mathematical note. The original Zenodo DOI identifies the earlier v1.0.0 note only."
+message: "Please cite the version-specific Zenodo DOI for the revised mathematical note. The original v1.0.0 remains preserved in the version history."
 type: dataset
 title: "Anagh's Law: Monotonicity of Geometric Clearance"
 authors:
@@ -20,7 +20,10 @@ preferred-citation:
   month: 10
   day: 11
   version: 1.1.0
-  url: "https://www.anaghkanungo.com/anaghs-law"
+  publisher:
+    name: Zenodo
+  doi: "10.5281/zenodo.23329767"
+  url: "https://zenodo.org/records/23329767"
 abstract: "An elementary mathematical note on monotonicity of geometric clearance, with explicit envelope and placement definitions, strict clearance, common admissibility, motion and margin corollaries, and a partial-order counterexample. Author prepared; not peer reviewed."
 keywords:
   - geometric containment
